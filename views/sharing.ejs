@@ -1,0 +1,22 @@
+<div class="col-sm-6">
+    <div class="well">
+        <h3 class="text-primary"><span class="fa fa-facebook"></span> Facebook</h3>
+
+        <p>
+            <strong>id</strong>: <%= user.facebook.id %><br>
+            <strong>token</strong>: <%= user.facebook.token %><br>
+            <strong>email</strong>: <%= user.facebook.email %><br>
+            <strong>name</strong>: <%= user.facebook.name %>
+        </p>
+
+    </div>
+</div>
+
+<% if (user.twitter.id != null) { %>
+<h2 class="fa fa-twitter"> Twitter</h2><br>
+<img src="https://avatars.io/twitter/<%= user.twitter.username %>" class="img-circle"><br>
+<strong>id</strong>: <%= user.twitter.id %><br>
+<strong>token</strong>: <%= user.twitter.token %><br>
+<strong>username</strong>: <%= user.twitter.username %><br>
+<strong>displayName</strong>: <%= user.twitter.displayName %>
+<% } %>
